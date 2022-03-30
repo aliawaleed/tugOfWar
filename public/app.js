@@ -30,7 +30,6 @@ socket.on('message', () => {
 
 //////////////////p5 code//////////////////
 //global variables
-let s = 'Game Over!';
 let x = -350;
 let y = 265;
 let rope;
@@ -82,14 +81,17 @@ function drawData(pos) {
         textSize(32);
         fill(255);
         noStroke();
-        text(s, 300, 320);
         if (pos.x + 750 < 0){
             let winner = "Player 1 won!";
-            text(winner, 290, 360);
+            text(winner, 290, 300);
+            text("Refresh to play again!", 240, 350);
+            x = -4000;
         }
         if (pos.x + 750 > 800){
             let winner = "Player 2 won!";
-            text(winner, 290, 360);
+            text(winner, 290, 300);
+            text("Refresh to play again!", 240, 350);
+            x = 4000;
         }
     }
 }
