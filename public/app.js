@@ -35,12 +35,10 @@ let x = -350;
 let y = 265;
 let rope;
 let garden;
-let cloth;
 
 function preload() {
     rope = loadImage('rope.png');
     garden = loadImage('garden.png');
-    cloth = loadImage('cloth.png');
 }
 
 function setup() {
@@ -60,10 +58,10 @@ function setup() {
 
 function keyPressed() {
     if (keyIsDown(RIGHT_ARROW)) { //if right arrow key is pressed, move to the right
-        x += 20;                      
+        x += 30;                      
     }
     if (keyIsDown(LEFT_ARROW)) { //if left arrow key is pressed, move to the left
-        x -= 20;                      
+        x -= 30;                      
     }
     let pos = {x: x};
     //emit this information to the server
