@@ -1,7 +1,7 @@
 # Sockets Assignment
 
 ### Title
-[Tug of War](https://gaudy-antique-clementine.glitch.me)
+[Tug of War](https://tug-of-war-alia.glitch.me)
 
 ### Description
 This is a simple version of a 2-player game over sockets. The goal of the game is to pull the triangle at the center of the rope/screen to your side. Each player is assigned a side and they use the right/left arrow key to their respective side. The first player wins when they pull the rope to the left and the second player wins when they pull the rope to the right end. 
